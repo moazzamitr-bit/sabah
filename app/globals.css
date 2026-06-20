@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --green-deep: #1b5e20;
+  --green: #2e7d32;
+  --green-light: #7cb342;
+  --gold: #b8860b;
+  --background: #fafaf7;
+  --surface: #f1efe8;
+  --text: #2c2c2a;
+  --text-muted: #5f5e5a;
+  --border: rgba(46, 125, 50, 0.11);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-padding-top: 105px;
+  overflow-x: clip;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 90% 8%, rgba(124, 179, 66, 0.07), transparent 22rem),
+    var(--background);
+  color: var(--text);
+  font-family: var(--font-vazirmatn), Tahoma, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+
+::selection {
+  background: rgba(46, 125, 50, 0.2);
+  color: var(--green-deep);
+}
+
+@layer components {
+  .container-site {
+    @apply mx-auto w-full max-w-[1440px] px-5 sm:px-7 lg:px-10 xl:px-14;
+  }
+
+  .section-space {
+    @apply py-24 sm:py-28;
+  }
+
+  .icon-button {
+    @apply grid size-10 place-items-center rounded-full transition hover:bg-green-50 hover:text-brand focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-green-700/20;
+  }
+
+  .footer-title {
+    @apply text-base font-black text-brand-ink;
+  }
+}
+
+@supports (animation-timeline: scroll()) {
+  .scroll-enhanced {
+    animation-timeline: scroll();
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .hide-scrollbar {
+    scrollbar-width: none;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

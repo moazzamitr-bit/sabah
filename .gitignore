@@ -1,0 +1,18 @@
+.next/
+node_modules/
+.npm-cache/
+out/
+.DS_Store
+*.log
+*.tsbuildinfo
+qa-*.png
+qa-*.jpg
+AGENTS.md
+sabah-homepage/
+
+# Local design-review and unused source assets
+public/assets/design-concept.png
+public/assets/leaves-chroma.png
+public/assets/leaves-overlay.png
+public/assets/category-*-v2.jpg
+public/assets/hero-products-v2.png
