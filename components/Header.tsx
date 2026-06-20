@@ -12,6 +12,7 @@ import {
   X,
 } from "@phosphor-icons/react";
 import { navItems } from "@/data/site";
+import { assetPath } from "@/lib/paths";
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -49,7 +50,7 @@ export function Header() {
         >
           <Link href="#home" aria-label="صباح - صفحه اصلی" className="shrink-0">
             <Image
-              src="/assets/sabah-logo.png"
+              src={assetPath("/assets/sabah-logo.png")}
               alt="لوگوی لبنیات صباح"
               width={118}
               height={68}
@@ -122,7 +123,7 @@ export function Header() {
               onClick={(event) => event.stopPropagation()}
             >
           <div className="mb-10 flex items-center justify-between">
-            <Image src="/assets/sabah-logo.png" alt="" width={105} height={60} className="h-12 w-auto" />
+            <Image src={assetPath("/assets/sabah-logo.png")} alt="" width={105} height={60} className="h-12 w-auto" />
             <button onClick={() => setMenuOpen(false)} className="icon-button" aria-label="بستن منو">
               <X size={23} />
             </button>

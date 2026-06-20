@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "./Button";
+import { assetPath } from "@/lib/paths";
 
 const badges = [
   { title: "حلال", sub: "HALAL" },
@@ -14,7 +15,7 @@ export function TrustFactorySection() {
       <div className="grid overflow-hidden rounded-[2.25rem] bg-brand-deep text-white shadow-soft lg:grid-cols-[.95fr_1.05fr]">
         <div className="relative min-h-[390px] lg:order-2 lg:min-h-[560px]">
           <Image
-            src="/assets/factory-v2.png"
+            src={assetPath("/assets/factory-v2.png")}
             alt="کارخانه مدرن و آزمایشگاه کنترل کیفیت صباح"
             fill
             sizes="(max-width: 1024px) 100vw, 52vw"

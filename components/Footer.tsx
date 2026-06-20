@@ -9,13 +9,14 @@ import {
   TelegramLogo,
 } from "@phosphor-icons/react/dist/ssr";
 import { navItems } from "@/data/site";
+import { assetPath } from "@/lib/paths";
 
 export function Footer() {
   return (
     <footer id="contact" className="border-t border-brand/10 bg-white">
       <div className="container-site grid gap-10 py-14 md:grid-cols-2 lg:grid-cols-[1.3fr_.8fr_.8fr_1.1fr]">
         <div>
-          <Image src="/assets/sabah-logo.png" alt="صباح" width={120} height={68} className="h-16 w-auto" />
+          <Image src={assetPath("/assets/sabah-logo.png")} alt="صباح" width={120} height={68} className="h-16 w-auto" />
           <p className="mt-5 max-w-sm text-sm leading-7 text-brand-muted">
             صباح، برندی پیشرو در تولید محصولات لبنی با تمرکز بر کیفیت، نوآوری و
             سلامت خانواده‌های ایرانی.

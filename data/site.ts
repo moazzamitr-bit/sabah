@@ -9,6 +9,7 @@ import {
   Sparkle,
   Truck,
 } from "@phosphor-icons/react/dist/ssr";
+import { assetPath } from "@/lib/paths";
 
 export type NavItem = { label: string; href: string };
 export type Benefit = { title: string; caption: string; icon: Icon };
@@ -57,35 +58,35 @@ export const categories: Category[] = [
   {
     title: "شیرها",
     description: "شیر تازه، کم‌چرب و پرچرب برای هر روز",
-    image: "/assets/category-milk-motion.png",
+    image: assetPath("/assets/category-milk-motion.png"),
     accent: "#1565C0",
     wash: "#EAF2FF",
   },
   {
     title: "ماست‌ها",
     description: "ماست سنتی، چکیده، میوه‌ای و یونانی",
-    image: "/assets/category-yogurt-motion.png",
+    image: assetPath("/assets/category-yogurt-motion.png"),
     accent: "#D4537E",
     wash: "#FCEAF1",
   },
   {
     title: "پنیرها",
     description: "پنیرهای صبحانه، لبنه، لاکتیکی و تخصصی",
-    image: "/assets/category-cheese-motion.png",
+    image: assetPath("/assets/category-cheese-motion.png"),
     accent: "#1D9E75",
     wash: "#E5F7F1",
   },
   {
     title: "کشک و محصولات سنتی",
     description: "طعم اصیل سفره ایرانی با کیفیت امروز",
-    image: "/assets/category-traditional-motion.png",
+    image: assetPath("/assets/category-traditional-motion.png"),
     accent: "#EF9F27",
     wash: "#FFF3DE",
   },
   {
     title: "دوغ و نوشیدنی‌ها",
     description: "دوغ، کفیر و نوشیدنی‌های لبنی خنک",
-    image: "/assets/category-drinks-motion.png",
+    image: assetPath("/assets/category-drinks-motion.png"),
     accent: "#2E7D32",
     wash: "#EAF5E6",
   },
@@ -104,18 +105,18 @@ export const newsItems = [
     title: "همراه با دامداران، همراه با طبیعت",
     excerpt: "نگاهی به مسیر تأمین شیر تازه و همکاری پایدار صباح با دامداری‌های منتخب.",
     date: "۲۵ خرداد ۱۴۰۵",
-    image: "/assets/news-farm-v2.jpg",
+    image: assetPath("/assets/news-farm-v2.jpg"),
   },
   {
     title: "توسعه خط تولید جدید صباح",
     excerpt: "فناوری‌های تازه برای کیفیت پایدارتر، ظرفیت بیشتر و محصولاتی متنوع‌تر.",
     date: "۱۶ خرداد ۱۴۰۵",
-    image: "/assets/factory-v2.png",
+    image: assetPath("/assets/factory-v2.png"),
   },
   {
     title: "فواید ماست برای سلامت خانواده",
     excerpt: "چطور ماست را هوشمندانه‌تر در برنامه غذایی روزانه خانواده قرار دهیم؟",
     date: "۱۳ خرداد ۱۴۰۵",
-    image: "/assets/news-breakfast-v2.jpg",
+    image: assetPath("/assets/news-breakfast-v2.jpg"),
   },
 ];

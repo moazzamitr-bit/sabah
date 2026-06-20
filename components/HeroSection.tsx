@@ -10,10 +10,11 @@ import {
   useTransform,
 } from "framer-motion";
 import { ArrowLeft, ArrowDown } from "@phosphor-icons/react";
+import { assetPath } from "@/lib/paths";
 
 const leafLayers = [
   {
-    src: "/assets/leaf-1.png",
+    src: assetPath("/assets/leaf-1.png"),
     className: "left-[5%] top-[12%] w-24 sm:w-32",
     x: 18,
     y: 26,
@@ -21,7 +22,7 @@ const leafLayers = [
     duration: 5.8,
   },
   {
-    src: "/assets/leaf-2.png",
+    src: assetPath("/assets/leaf-2.png"),
     className: "left-[42%] top-[11%] w-14 sm:w-20",
     x: -20,
     y: 34,
@@ -29,7 +30,7 @@ const leafLayers = [
     duration: 6.7,
   },
   {
-    src: "/assets/leaf-4.png",
+    src: assetPath("/assets/leaf-4.png"),
     className: "left-[52%] top-[27%] hidden w-14 lg:block",
     x: 16,
     y: 28,
@@ -37,7 +38,7 @@ const leafLayers = [
     duration: 5.2,
   },
   {
-    src: "/assets/leaf-6.png",
+    src: assetPath("/assets/leaf-6.png"),
     className: "right-[18%] top-[13%] w-12 sm:w-16",
     x: -14,
     y: 25,
@@ -45,7 +46,7 @@ const leafLayers = [
     duration: 6.2,
   },
   {
-    src: "/assets/leaf-7.png",
+    src: assetPath("/assets/leaf-7.png"),
     className: "right-[3%] bottom-[19%] hidden w-24 opacity-80 lg:block",
     x: -28,
     y: 22,
@@ -91,7 +92,7 @@ export function HeroSection() {
         className="absolute inset-0 will-change-transform"
       >
         <Image
-          src="/assets/hero-cinematic.png"
+          src={assetPath("/assets/hero-cinematic.png")}
           alt="محصولات صباح در چشم‌انداز کوهستانی شمال ایران"
           fill
           priority
